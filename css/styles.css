@@ -135,12 +135,21 @@ body{
 .repart{
     float: left;
     width: 50%;
+    margin-bottom: 50px;
 }
 .back-link{
-    margin-top: 300px;
+    margin-top: 50px;
     display: block;
     color:#004cff;
     font-size: 20px;
+}
+.iconsAut{
+    margin-top: 100px;
+    color:#55DDE0;
+    font-size: 20px;
+}
+.iconsAut a{
+    color:#004cff;
 }
 @keyframes menuNav {
 	0% {opacity: 0;}

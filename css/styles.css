@@ -39,9 +39,10 @@ body{
     opacity: 1;
 }
 .navigation img{
+    float: left;
     width: 30px;
     height: 30px;
-    transform: translate(-3px,7px);
+    margin-top: 13px;
     opacity: 0;
 }
 
@@ -98,13 +99,32 @@ body{
 
 .main{
     padding: 40px 180px 80px 100px;
-    background-color: white;
+    animation-name: movRight;
+    animation-duration: 1s;
 }
-
+.main h1{
+    color:#55DDE0;
+    font-size: 40px;
+}
+.main h3{
+    color:#004cff;
+    font-size: 20px;
+}
+.main p{
+    color:#55DDE0;
+    font-size: 20px;
+}
+.main img{
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: -10px 10px;
+}
 .caminho{
     font-size: 20px;
     list-style: none;
     color:#55DDE0;
+    padding-left: 0;
 }
 .caminho li{
     display: inline-block;
@@ -112,7 +132,16 @@ body{
 .caminho a{
     color:#55DDE0;
 }
-
+.repart{
+    float: left;
+    width: 50%;
+}
+.back-link{
+    margin-top: 300px;
+    display: block;
+    color:#004cff;
+    font-size: 20px;
+}
 @keyframes menuNav {
 	0% {opacity: 0;}
 	100% {opacity: 1}

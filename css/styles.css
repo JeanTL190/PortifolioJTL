@@ -2,6 +2,7 @@ html,body {
 	margin: 0;
 	padding: 0;
     font-size: 0;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -12,6 +13,7 @@ body{
 .navigation{
     background-color: #33658A;
     animation-name: menuNav;
+    height: 60px;
 	animation-duration: 2s;
 }
 .navigation ul{
@@ -52,7 +54,6 @@ body{
 }
 .capa div{
     display: inline-block;
-    vertical-align: top;
     height: 550px;
 }
 
@@ -62,9 +63,9 @@ body{
     
 }
 .profile-foto img{
+    margin-top: 100px;
     width: 380px;
 	border-radius: 380px;
-    margin-top: 100px;
     animation-name: movRight;
     animation-duration: 1s;
 }
@@ -103,23 +104,39 @@ body{
     animation-duration: 1s;
 }
 .main h1{
+    text-align: center;
     color:#55DDE0;
     font-size: 40px;
 }
+.main h2{
+    text-align: center;
+    color:#55DDE0;
+    font-size: 30px;
+    margin-top: 50px;
+}
 .main h3{
     color:#004cff;
+    font-weight: normal;
+    text-transform: uppercase;
     font-size: 20px;
 }
 .main p{
     color:#55DDE0;
     font-size: 20px;
+    text-align: justify;
 }
 .main img{
-    float: left;
     width: 40px;
     height: 40px;
     margin: -10px 10px;
 }
+.main .pictCurr{
+    float: left;
+    width: 300px;
+    height: 300px;
+    margin: 10px 10px 10px;
+}
+
 .caminho{
     font-size: 20px;
     list-style: none;
@@ -132,8 +149,23 @@ body{
 .caminho a{
     color:#55DDE0;
 }
+.hblist{
+    text-align: center;
+    font-size: 20px;
+    list-style: none;
+    color: #004cff;
+    padding-left: 0;
+}
+.hblist li{
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.hblist a{
+    color:#004cff
+}
 .repart{
-    float: left;
+    display: inline-block;
     width: 50%;
     margin-bottom: 50px;
 }
@@ -144,12 +176,56 @@ body{
     font-size: 20px;
 }
 .iconsAut{
-    margin-top: 100px;
     color:#55DDE0;
     font-size: 20px;
 }
 .iconsAut a{
     color:#004cff;
+}
+
+.miniatura{
+    height: 320px;
+    width: 320px;
+    display: inline-block;
+    margin: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+.miniatura a{
+    text-decoration: none;
+}
+.bluebox{
+    width: 100%;
+    height: 100%;
+    background-color:#000000;
+    background-position: center;
+    opacity: 0;
+    transition: 1s;
+}
+.bluebox:hover{
+    opacity: 0.8;
+    transition: 1s;
+}
+.blueboxText{
+    text-align: center;
+}
+.blueboxText h1{
+    margin-top: 0px;
+    padding-top: 25%;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #004cff;
+}
+.blueboxText h2{
+    margin-top: 0;
+}
+.videos{
+    text-align: center;
+}
+.videos iframe{
+    margin: 10px;
 }
 @keyframes menuNav {
 	0% {opacity: 0;}
